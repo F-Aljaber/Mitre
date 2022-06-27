@@ -165,19 +165,12 @@ def create_json(filename, index_ttp= args.TTP, ttp_colname="TTP coverage", date_
     if 'Index' not in df.columns:
       sheetname = 'Sheet2'
       df = pd.read_excel(filename, sheetname).iloc[::-1]
-
     else:
         df = pd.read_excel(filename, index_col=0).iloc[::-1]
 
     colnames = list(df.columns)
 
-    # interests = ['Year', 'Week']
     interests = []
-    # if date_grade is None:
-    #     if 'Date' not in colnames:
-    #         date_grade = False
-    #     else:
-    #         date_grade = True
 
     if date_grade == 'True':
         date_grade = True
