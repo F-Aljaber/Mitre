@@ -8,8 +8,6 @@
 # Current input: coverage map.xlsx
 # Current output: output.json
 
-#Developed April 2022 by SABL
-#Edited May 2022 by Emma van Kleef
 
 import pprint
 import json
